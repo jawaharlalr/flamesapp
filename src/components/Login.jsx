@@ -1,4 +1,4 @@
-// src/pages/Login.jsx
+// src/components/Login.jsx
 import { useState } from "react";
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -11,7 +11,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      // Allow only the specified admin
+      // Only allow the authorized admin
       if (email !== "Manjumel2024@gmail.com" || password !== "raeec2025v3") {
         alert("Unauthorized admin login!");
         return;
@@ -25,28 +25,37 @@ export default function Login() {
   };
 
   return (
-    <div className="max-w-sm mx-auto mt-20 p-6 bg-white shadow rounded">
-      <h2 className="text-xl font-bold mb-4 text-center">Admin Login</h2>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-        className="w-full p-2 border mb-2 rounded"
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Password"
-        className="w-full p-2 border mb-4 rounded"
-      />
-      <button
-        onClick={handleLogin}
-        className="w-full bg-black text-white py-2 rounded"
-      >
-        Login
-      </button>
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-rose-100 via-pink-100 to-yellow-50">
+      <div className="w-full max-w-md p-8 bg-white border shadow-lg rounded-xl border-rose-200">
+        <div className="flex items-center justify-center mb-6">
+          <h2 className="text-2xl font-bold text-center text-pink-700">
+            All Results
+          </h2>
+        </div>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+          className="w-full p-3 mb-3 border border-pink-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-400"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+          className="w-full p-3 mb-5 border border-pink-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-400"
+        />
+        <button
+          onClick={handleLogin}
+          className="w-full py-3 font-semibold text-white transition bg-pink-600 rounded hover:bg-pink-700"
+        >
+          Login
+        </button>
+        <div className="mt-6 text-xs text-center text-gray-400">
+          Theme: Love ❤️ | Marriage 💍 | Friends 👥 | Affection 🤗 | Sister 🧕 | Enemy 💥
+        </div>
+      </div>
     </div>
   );
 }
