@@ -89,12 +89,12 @@ export default function AdminDashboard() {
     <div className="min-h-screen px-4 py-10 bg-gray-100">
       <div className="max-w-4xl p-6 mx-auto bg-white rounded-lg shadow-lg">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-3xl font-bold text-pink-600">Results Page</h2>
+          <h2 className="text-3xl font-bold text-pink-600">Ol Vita Avan Nilamaigal</h2>
           <button
             onClick={handleLogout}
             className="flex items-center px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600"
           >
-            <LogOut className="w-4 h-4 mr-2" /> Logout
+            <LogOut className="w-4 h-4 mr-2" /> Velapoda
           </button>
         </div>
 

@@ -18,7 +18,7 @@ export default function Login() {
       }
 
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/admin");
+      navigate("/matikitapangu");
     } catch (err) {
       alert("Invalid credentials!");
     }
@@ -29,7 +29,7 @@ export default function Login() {
       <div className="w-full max-w-md p-8 bg-white border shadow-lg rounded-xl border-rose-200">
         <div className="flex items-center justify-center mb-6">
           <h2 className="text-2xl font-bold text-center text-pink-700">
-            All Results
+            Kadhal Olgal Parkalam
           </h2>
         </div>
         <input

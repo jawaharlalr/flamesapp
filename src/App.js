@@ -7,8 +7,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<FlamesCalculator />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/whatbro" element={<Login />} />
+      <Route path="/matikitapangu" element={<AdminDashboard />} />
     </Routes>
   );
 }

@@ -103,7 +103,7 @@ export default function FlamesCalculator() {
     >
       <div className="w-full max-w-md p-6 border border-pink-100 shadow-2xl bg-white/90 backdrop-blur-sm rounded-2xl">
         <h1 className="mb-6 text-3xl font-extrabold tracking-wide text-center text-pink-600 drop-shadow-md">
-          FLAMES Calculator
+          FLAMES Podu Santhoshama Padu
         </h1>
 
         <input
